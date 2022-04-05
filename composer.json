@@ -1,5 +1,5 @@
 {
-    "name": "homebase/composer-php8-template",
+    "name": "parf/composer-php8-template",
     "description": "PHP8/8.1 Template for composer/packagist",
     "keywords": ["homebase", "framework", "standalone"],
     "license": "MIT",
