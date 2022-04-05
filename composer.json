@@ -1,0 +1,34 @@
+{
+    "name": "homebase/composer-php8-template",
+    "description": "PHP8/8.1 Template for composer/packagist",
+    "keywords": ["homebase", "framework", "standalone"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Parf",
+            "email": "sergey.porfiriev@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=8.0"
+    },
+    "require-dev": {
+    },    
+    "autoload": {
+        "psr-4": {
+            "hb\\": "src/hbc/"
+        }
+    },
+  "scripts": {
+    "phpstan": "tools/phpstan analyse -c phpstan.neon src",
+    "doc": "tools/phpDocumentor.phar -d src -t doc",
+    "psalm": "tools/psalm.phar",
+    "cs-dry": "tools/php-cs-fixer fix --diff -v --dry-run",
+    "cs-fix": "tools/php-cs-fixer fix --diff -v",
+    "rector-dry": "tools/rector process src --dry-run",
+    "rector": "tools/rector process src",
+    "test": "tools/stest-all tests",
+    "test-quite": "tools/stest-all -q tests"
+  }    
+}

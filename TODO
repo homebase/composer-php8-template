@@ -1,0 +1,8 @@
+[+] spartan-test >> composer
+  ... by default support 
+   bootstrap/autoload.php
+   vendor/autoload
+   init.php - current or any parent directory
+
+
+
