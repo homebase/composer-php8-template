@@ -1,3 +1,6 @@
-checkout https://github.com/homebase/php-tools somewhere
-run ./install all there
-create symlink ln -s $PATH/php-tools/bin tools
+checkout `https://github.com/homebase/php-tools` somewhere
+run `./install` all there
+create symlink: `ln -s $PATH/php-tools/bin tools`
+
+In order to have executable spartan tests you need to place `stest` symlink into your PATH directory such as `~/bin` or `/usr/local/bin`
+

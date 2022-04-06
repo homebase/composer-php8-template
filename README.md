@@ -13,3 +13,6 @@ Provided tools:
 * spartan-test (phpunit alternative)
 
 Check out composer.json how to run tools on your code
+
+# How to Use:
+composer create-project parf/composer-php8-template my-project-name
