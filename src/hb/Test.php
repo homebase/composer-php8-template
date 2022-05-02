@@ -17,4 +17,11 @@ class Test {
     function hello(string $str): string {
         return 'Hello '.$str;
     }
+
+    /**
+     * sum
+     */
+    function sum(int $a, int $b): int {
+        return $a + $b;
+    }
 }
