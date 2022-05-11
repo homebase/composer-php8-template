@@ -1,6 +1,0 @@
-> tools/psalm.phar
-Target PHP version: 8.0 (inferred from composer.json)
-Scanning files...
-Analyzing files...
-
-

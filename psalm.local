@@ -1,9 +1,0 @@
-------------------------------
-[42;1m                              [0m
-[42;30;1m       No errors found!       [0m
-[42;1m                              [0m
-------------------------------
-
-Checks took 0.00 seconds and used 12.949MB of memory
-No files analyzed
-Psalm was able to infer types for 100% of the codebase
