@@ -1,7 +1,10 @@
 # PHP8/8.1 composer/packagist package template
 
 # INSTALL / How to Use:
-`composer create-project parf/composer-php8-template` **your-project-name**
+* `composer create-project parf/composer-php8-template` **your-project-name**
+* edit `composer.json`
+* run `composer install`
+
 
 ## Provides:
 * ready to use Composer Package Template for php 8/8.1 projects
