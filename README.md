@@ -1,15 +1,15 @@
 # PHP8/8.1 composer/packagist package template
 
-Provides:
+# INSTALL / How to Use:
+`composer create-project parf/composer-php8-template` **your-project-name**
+
+## Provides:
 * ready to use Composer Package Template for php 8/8.1 projects
-* tools (see list below)
+* commonly used php tools (see list below)
 * default tools configurations
 * useful scripts
 
-# How to Use:
-`composer create-project parf/composer-php8-template` **your-project-name**
-
-# Provided Php-Tools: @see [instructions](setup-tools.howto)
+# Provided Php-Tools
 * php code linter
 * [psalm](https://psalm.dev/docs/annotating_code/supported_annotations/)
 * [php-stan](https://phpstan.org/writing-php-code/phpdocs-basics)
@@ -20,9 +20,11 @@ Provides:
 * [spartan-test](https://github.com/parf/spartan-test) (phpunit alternative)
 * [psysh](https://developpaper.com/psysh-php-interactive-console/)
 
+[tools install instructions](setup-tools.howto)
+
 # Scripts
 > `composer test`<br>
-    run [unit tests](https://github.com/parf/spartan-test). use `test-q` to run quite tests (show errors only)
+    run [unit tests](https://github.com/parf/spartan-test). use `test-q` to run tests silently (show errors only)
 
 > `composer psalm`<br>
     check code with [psalm](https://psalm.dev/docs/annotating_code/supported_annotations/)
@@ -33,7 +35,7 @@ Provides:
 > `composer lint`<br>
     php syntax check
 
-> `composer psalm-dry` / `composer psalm-fix`  (aka [psalter](https://psalm.dev/docs/manipulating_code/fixing/)<br>
+> `composer psalm-dry` / `composer psalm-fix`  (aka [psalter](https://psalm.dev/docs/manipulating_code/fixing/))<br>
     review/apply suggested code changes by psalm, be careful always do *dry-run* first
 
 > `composer cs-dry` / `composer cs-fix`<br>
@@ -50,3 +52,5 @@ Provides:
 
 > `./psysh` [php cli shell](https://developpaper.com/psysh-php-interactive-console/)<br>
     <small>notable commands: `wtf`, `doc Class`, `doc Class::method`, `show Class::method`, `ls -l ClassName`, `help`</small>
+
+see [composer.json](./composer.json) scripts section for more scripts shortcuts

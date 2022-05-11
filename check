@@ -1,0 +1,47 @@
+#!/bin/sh
+
+composer lint
+if [ $? -eq 1 ] 
+then
+    echo "Syntax Check Failed"
+    exit 1
+fi
+
+composer cs-dry > /dev/null 2>/dev/null
+if [ $? -ne 0 ]
+then
+   composer cs-dry
+   echo
+   echo $(tput setab 3)$(tput setaf 7)*** APPLY Code Styling? ***$(tput sgr0)
+   echo press ^C to stop, any other key to continue
+   read
+   composer cs-fix
+fi
+
+
+composer test-q
+if [ $? -ne 0 ] 
+then
+    echo "Unit Test Failed"
+    exit 1
+fi
+
+composer psalm > psalm.local 2>psalm.err.local
+if [ $? -ne 0 ] 
+then
+    cat psalm.err.local psalm.local
+    echo "Psalm Failed"
+    exit 1
+fi
+
+composer stan-q
+if [ $? -ne 0 ] 
+then
+    echo "php-Stan Failed"
+    composer stan
+    exit 1
+fi
+
+echo
+echo $(tput setab 2)$(tput setaf 7)*** CHECK SUCCESS ***$(tput sgr0)
+echo
