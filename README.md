@@ -11,10 +11,10 @@
 
 # Provided Php-Tools
 * php code linter
-* [psalm](https://psalm.dev/docs/annotating_code/supported_annotations/)
-* [php-stan](https://phpstan.org/writing-php-code/phpdocs-basics)
-* [rector](https://github.com/rectorphp/rector/blob/main/docs/rector_rules_overview.md)
-* [phpDocumentor](https://docs.phpdoc.org/3.0/guide/guides/running-phpdocumentor.html#quickstart)
+* [psalm](https://psalm.dev/docs/annotating_code/supported_annotations/) static code analyzer and fixer
+* [php-stan](https://phpstan.org/writing-php-code/phpdocs-basics) static code analyzer
+* [rector](https://github.com/rectorphp/rector/blob/main/docs/rector_rules_overview.md) code analyzer & refactoring tool
+* [phpDocumentor](https://docs.phpdoc.org/3.0/guide/guides/running-phpdocumentor.html#quickstart) documentation application for PHP projects
 * [php-cs-fixer](https://mlocati.github.io/php-cs-fixer-configurator/) Coding Standards Fixer
 * [php-unit](https://phpunit.readthedocs.io/en/9.5/writing-tests-for-phpunit.html) Unit Testing
 * [spartan-test](https://github.com/parf/spartan-test) (phpunit alternative) + automated web-test framework
