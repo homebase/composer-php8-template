@@ -15,10 +15,10 @@
 * [php-stan](https://phpstan.org/writing-php-code/phpdocs-basics)
 * [rector](https://github.com/rectorphp/rector/blob/main/docs/rector_rules_overview.md)
 * [phpDocumentor](https://docs.phpdoc.org/3.0/guide/guides/running-phpdocumentor.html#quickstart)
-* [php-cs-fixer](https://mlocati.github.io/php-cs-fixer-configurator/)
-* [php-unit](https://phpunit.readthedocs.io/en/9.5/writing-tests-for-phpunit.html)
-* [spartan-test](https://github.com/parf/spartan-test) (phpunit alternative)
-* [psysh](https://developpaper.com/psysh-php-interactive-console/)
+* [php-cs-fixer](https://mlocati.github.io/php-cs-fixer-configurator/) Coding Standards Fixer
+* [php-unit](https://phpunit.readthedocs.io/en/9.5/writing-tests-for-phpunit.html) Unit Testing
+* [spartan-test](https://github.com/parf/spartan-test) (phpunit alternative) + automated web-test framework
+* [psysh](https://developpaper.com/psysh-php-interactive-console/) - php cli shell
 
 [tools install instructions](setup-tools.howto)
 
