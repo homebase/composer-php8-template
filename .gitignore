@@ -5,3 +5,5 @@ tools
 doc
 .phpdoc
 .php-cs-fixer.cache
+*.code-workspace
+*.local

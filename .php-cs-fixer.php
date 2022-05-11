@@ -6,16 +6,15 @@
 
 declare(strict_types=1);
 
-#$header = <<<'EOF'
-#    Lorem Ipsum ..
-#    (C) Name <email>
-#    EOF;
+$header = <<<'EOF'
+    .... add this header to the top of every file
+    EOF;
 
 $finder = PhpCsFixer\Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCSIgnored(true)
     ->exclude('tests')
-    ->in(__DIR__.'/src')
+#    ->in(__DIR__.'/src')
 ;
 
 //    ->append([
@@ -37,7 +36,7 @@ $config
         'array_push' => true,
         //      'array_syntax' => ['short'],
         'heredoc_indentation' => false,
-#        'header_comment' => ['header' => $header],
+        // 'header_comment' => ['header' => $header],
         'modernize_strpos' => true, // needs PHP 8+ or polyfill
         'use_arrow_functions' => true,
         'heredoc_indentation' => true,
@@ -49,7 +48,13 @@ $config
         'braces' => [
             'position_after_functions_and_oop_constructs' => 'same',   // "function () { " same line
             'allow_single_line_closure' => true,
-        ],
+	],
+	'strict_comparison' => false, // can break old code
+	'yoda_style' => false, // ugly sometimes
+	#'increment_style' => false, // c++ not ++c
+	'increment_style' => ['style' => 'post'], // c++ not ++c
+	'single_line_comment_style' => false,  // psalm does not support "//" comments
+	'phpdoc_to_comment' => false, // psalm does not like this	
     ]))->setFinder($finder)
 
 ;
